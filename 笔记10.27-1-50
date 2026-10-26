@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "笔记10.27-1:50",
+  "behavior": "create",
+  "noteNameFormat": "{{title|safe_name}}",
+  "path": "Clippings/Video Notes",
+  "context": "视频标题：{{title}}\n平台：{{site}}\n作者：{{author}}\n视频简介：{{description}}\n\n带时间戳逐字稿：\n{{transcript}}",
+  "noteContentFormat": "# 00、{{title}}\n\n{{site|replace:\"Bilibili\":\"B站\",\"bilibili\":\"B站\",\"哔哩哔哩\":\"B站\",\"Douyin\":\"抖音\",\"Xiaohongshu\":\"小红书\"}}视频链接：{{url}}\n\n## 视频信息\n- 平台：{{site|replace:\"Bilibili\":\"B站\",\"bilibili\":\"B站\",\"哔哩哔哩\":\"B站\",\"Douyin\":\"抖音\",\"Xiaohongshu\":\"小红书\"}}\n- 作者/频道：{{author}}\n- 视频时长：{{schema:duration|duration}}\n- 发布时间：{{published}}\n- 剪藏日期：{{date|date:\"YYYY-MM-DD HH:mm\"}}\n- 语言：{{language}}\n\n{{\"把上下文整理为课程讲义。先输出 # 一句具体的课程主标题（不重复视频标题）。如果视频简介或逐字稿明确给出开源项目名称及地址，紧接着输出 ## 开源项目，并列出项目名称、平台和项目地址；没有真实地址则完全省略此节，绝不猜测。随后输出 ## 目录，目录只用 - 列出本课主题，不写编号、时间或解释；再按视频顺序输出 ## 1. 主题 - MM:SS，每节时间必须来自逐字稿。每节先用 - 写核心结论，再用缩进 - 写定义、原因、例子、工具或步骤；复杂流程可用 1. 2. 3.。结尾输出 ## AI 总结并写一段完整结论。不要重复前置标题、链接或视频信息；不要表格、行动清单、待补充、媒体、YAML、免责声明或编造。\"}}",
+  "properties": [],
+  "triggers": ["https://www.bilibili.com/video/", "https://www.youtube.com/watch?v=", "https://youtu.be/"]
+}
